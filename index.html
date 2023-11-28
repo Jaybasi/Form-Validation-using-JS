@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+    <title>JS Form</title>
+</head>
+<body>
+
+    <div id="message" style="display: none;color: white; background-color: rgb(40, 196, 40); text-align: center;">Successful!</div>
+    <div id="errorMsgU" style="display: none; background-color: rgb(201, 34, 34); color: rgb(8, 8, 8); text-align: center;">Username too small</div>
+    <div id="errorMsgP" style="display: none; background-color: rgb(143, 143, 9); text-align: center; color: white;"> Password too small</div>
+
+    <form action="" id="myForm">
+        <h3>Show/Hide Password Login Form</h3>
+        <div class="user-input">
+        <label for="username">Username</label>
+        <input type="text" id="username" required>
+        
+        <label for="password">Password</label>
+        <div class="password">
+        <input type="password" id="password" required>
+        <img src="eye-closed.png" id="eye-icon" alt="eye-closed">
+    </div>
+    </div>
+    <div class="checking">
+        <input type="checkbox" id="rememberMe"><label for="rememberMe">Remember Me</label>
+        <p id="forgotPassword">Forgot Password?</p>
+    </div>
+    <button id="login">Login</button>
+
+    </form>
+</body>
+</html>
